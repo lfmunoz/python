@@ -1,0 +1,33 @@
+debug message
+[INFO] 2015-03-04 16:39:00,177 test info message
+[WARNING] 2015-03-04 16:39:00,178 test warn message
+[ERROR] 2015-03-04 16:39:00,178 test error message
+[CRITICAL] 2015-03-04 16:39:00,178 test critical message
+[2015-03-04 16:39:55,555 INFO]  test info message
+[2015-03-04 16:39:55,555 WARNING]  test warn message
+[2015-03-04 16:39:55,555 ERROR]  test error message
+[2015-03-04 16:39:55,555 CRITICAL]  test critical message
+2015-03-04 16:43:07,148 INFO]  test info message
+2015-03-04 16:43:07,148 WARNING]  test warn message
+2015-03-04 16:43:07,148 ERROR]  test error message
+2015-03-04 16:43:07,148 CRITICAL]  test critical message
+[2015-03-04 16:43:55,066 - INFO]  test info message
+[2015-03-04 16:43:55,066 - WARNING]  test warn message
+[2015-03-04 16:43:55,066 - ERROR]  test error message
+[2015-03-04 16:43:55,066 - CRITICAL]  test critical message
+[2015-03-04 16:44:24,269 - INFO:test] info message
+[2015-03-04 16:44:24,269 - WARNING:test] warn message
+[2015-03-04 16:44:24,269 - ERROR:test] error message
+[2015-03-04 16:44:24,269 - CRITICAL:test] critical message
+[2015-03-04 16:45:20,766 - INFO - test] info message
+[2015-03-04 16:45:20,767 - WARNING - test] warn message
+[2015-03-04 16:45:20,767 - ERROR - test] error message
+[2015-03-04 16:45:20,767 - CRITICAL - test] critical message
+[2015-03-04 16:47:40,785 - INFO     - test] info message
+[2015-03-04 16:47:40,785 - WARNING  - test] warn message
+[2015-03-04 16:47:40,785 - ERROR    - test] error message
+[2015-03-04 16:47:40,785 - CRITICAL - test] critical message
+[2015-03-04 16:48:10,754 - INFO     - test] info message
+[2015-03-04 16:48:10,755 - WARNING  - test] warn message
+[2015-03-04 16:48:10,755 - ERROR    - test] error message
+[2015-03-04 16:48:10,755 - CRITICAL - test] critical message
