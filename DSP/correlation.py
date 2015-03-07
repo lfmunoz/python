@@ -16,10 +16,10 @@ def xcorrFunc(A,B):
     return C
 
 
-t=range(7)
-nsamples=7
-x = triang(5)
-y = np.roll(x,2)
+nsamples=100
+t=range(nsamples)
+x = triang(nsamples)
+y = np.roll(x,19)
 
 plt.figure(0) 
 plt.subplot(2,1,1)
@@ -34,28 +34,30 @@ plt.title('Output Sequence')
 
 
 xcorr = correlate(x, y)
-xcorr0 = xcorrFunc(x, y)
-
-print xcorr
-print xcorr0
 
 plt.figure(1) 
 plt.stem(xcorr)
-
-
 
 
 # The peak of the cross-correlation gives the shift between the two signals
 # The xcorr array goes from -nsamples to nsamples
 dt = np.linspace(-t[-1], t[-1], 2*nsamples-1)
 recovered_time_shift = dt[xcorr.argmax()]
+r = 0
+print recovered_time_shift
 
-#print x
-#print y
+if recovered_time_shift >= 0:
+    r =int(recovered_time_shift)
+else:
+    r = int(nsamples+ recovered_time_shift)
+
+print r
+
+plt.figure(2)
+plt.stem(np.roll(y,r))
 
 print "xcorr size %d" % xcorr.size
 print "xcorr max indx %d" % xcorr.argmax()
-print "recovered shift %d" % recovered_time_shift
 
 
 plt.show();
